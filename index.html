@@ -32,11 +32,20 @@
         $('#cover').css({
             width:screenWdith,
             height:screenHeight
-        });
+        }).animate({
+            width:screenWdith,
+            height:screenHeight,
+            opacity:'1'
+        },1000)
+         .animate({
+               width:screenWdith,
+               height:screenHeight,
+               opacity:'0'
+         },1000);
 
         setTimeout(function(){
             window.location.href='./pages/index.html';
-        },3000);
+        },2000);
     });
 
 </script>
