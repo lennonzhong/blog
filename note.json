@@ -11,9 +11,14 @@
     "title": "Git的使用小诀窍",
     "info":"当你建立了多个分支的时候，如果你切换分支，会将里面的代码全部给切换掉，所以你在改代码的时候，应该要将你的目录切换到要改的目录",
     "date":"2017-09-08"
+  },
+
+  {
+    "order":"03",
+    "title": "Git的使用小诀窍",
+    "info":"1.新建项目  2.git remote add origin （https://github.com/lennonzhong/blog.git）   3 git push -u origin master   4 git branch gh-pages    （pages.github.io）   5 git checkout gh-pages      6 git push -u origin gh-pages     7 地址  id+.github.io/项目名     8 域名绑定文件  CNAME www.xxxx.cwsd     9 DNS域名解析 cname id+.github.io   10 提交CNAME文件到gh-pages分支",
+    "date":"2017-09-08"
   }
-
-
 
 
 
