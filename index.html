@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人博客引导</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            border: 0;
+
+        }
+
+        #cover{
+            background: url('./images/test.jpg');
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="cover">
+    </div>
+</body>
+</html>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    $(function () {
+        var screenWdith=$(window).width();
+        var screenHeight=$(window).height();
+
+        $('#cover').css({
+            width:screenWdith,
+            height:screenHeight
+        });
+
+        setTimeout(function(){
+            window.location.href='./pages/index.html';
+        },3000);
+    });
+
+</script>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <script src="../js/template.js"></script>
+</head>
+<body>
+    <header>
+
+        <div id="topbar"></div>
+
+        <div class="row">
+            <div class="container">
+                <div id="title">
+                    <h1>个人博客——Lennon</h1>
+                </div>
+
+                <nav id="navbar">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation"><a href="#home" role="tab" data-toggle="tab">主页</a></li>
+                        <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">个人简介</a></li>
+                        <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">心得/笔记</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="content">
+        <div class="row">
+            <div class="topheader"></div>
+            <!--内容区域-->
+            <div class="mainContent">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <ul id="MainPage">
+
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <!--personal introduction-->
+                        <div id="jianjie" class="clearfix">
+                            <h2 class="clearfix"><b class="pull-left">Lennon Zhong的个人简介</b><b class="pull-right">您现在的位置是：网站首页>>个人介绍</b>  </h2>
+                            <h3>个人简介</h3>
+                            <p id="person_introduction">
+                                生活远不是你想的那么简单，你必须是时时刻刻的努力，这有这样才能弥补你与人家的不足，
+                                还有找准方向很重要，曾经的我迷失了，Android，Javaweb，cocos2d-x，PS……
+                                最后才找到自己想要的，那么就是学习前端……
+                            </p>
+                            <p id="zuoyouMing" class="pull-right">
+                                -----“戒骄戒躁，不愠不火”。
+                            </p>
+                            <img src="../images/timg.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        <h2 class="clearfix"><b class="pull-left">前端小知识、笔记</b> <b class="pull-right">您现在的位置是：网站首页>>个人笔记</b></h2>
+                        <ul id="xinde">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="topfooter"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="container">
+                <p>All Rights Reserved 版权所有：Lennon个人博客 备案号：蜀ICP备00000000号</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../js/index.js"></script>
+<script type="text/html" id="indexTemplate">
+    <li>
+        <h4>{{title}}</h4>
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="{{imagesSrc}}" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{description}}</h4>
+                <p>{{content}}</p>
+            </div>
+        </div>
+    </li>
+</script>
+
+
+<script type="text/html" id="SkillTemplate">
+    <li>
+        <div class="media">
+            <div class="media-left">
+                <span>{{order}}</span>
+            </div>
+
+            <div class="media-body">
+                <h4 class="media-heading text-center">{{title}}</h4>
+                <p id="noteContent">
+                    {{info}}
+                </p>
+                <p id="date">{{date}}</p>
+            </div>
+        </div>
+    </li>
+</script>
