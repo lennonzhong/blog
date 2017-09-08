@@ -15,8 +15,8 @@
 
   {
     "order":"03",
-    "title": "Git的使用小诀窍",
-    "info":"1.新建项目  2.git remote add origin （https://github.com/lennonzhong/blog.git）   3 git push -u origin master   4 git branch gh-pages    （pages.github.io）   5 git checkout gh-pages      6 git push -u origin gh-pages     7 地址  id+.github.io/项目名     8 域名绑定文件  CNAME www.xxxx.cwsd     9 DNS域名解析 cname id+.github.io   10 提交CNAME文件到gh-pages分支",
+    "title": "Git托管项目",
+    "info":"1.新建项目  2.git remote add origin （https://github.com/lennonzhong/blog.git）   3、git push -u origin master   4、、 git branch gh-pages    （pages.github.io）   5、 git checkout gh-pages      6、 git push -u origin gh-pages     7、 地址  id+.github.io/项目名     8、 域名绑定文件  CNAME www.xxxx.cwsd     9、 DNS域名解析 cname id+.github.io   10、 提交CNAME文件到gh-pages分支",
     "date":"2017-09-08"
   }
 
